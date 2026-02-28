@@ -1,0 +1,6 @@
+name: WoodCutter
+version: 1.0.0
+main: dev.mimi.woodcutter.paper.WoodCutterPaperPlugin
+api-version: '1.21'
+authors: [CevAPI]
+description: Adds expanded stonecutter recipes for logs, deepslate, and stone.

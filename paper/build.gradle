@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+dependencies {
+    compileOnly "io.papermc.paper:paper-api:${paper_api_version}"
+    implementation project(':common')
+}
+
+tasks.processResources {
+    from(project(':common').file('src/main/resources')) {
+        include 'woodcutter/recipes.csv'
+    }
+}
+
+tasks.jar {
+    archiveBaseName = 'woodcutter-paper'
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    from {
+        project(':common').sourceSets.main.output
+    }
+}

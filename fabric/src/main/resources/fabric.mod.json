@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "woodcutter",
+  "version": "${version}",
+  "name": "WoodCutter",
+  "description": "Adds expanded stonecutter recipes for logs, deepslate, and stone.",
+  "authors": ["CevAPI"],
+  "license": "GPL-3.0-only",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "dev.mimi.woodcutter.fabric.WoodCutterFabricMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": ">=1.21.11"
+  }
+}
