@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "dev.mimi.woodcutter.fabric.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "CommandsMixin",
+    "EntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

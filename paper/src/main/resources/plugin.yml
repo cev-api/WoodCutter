@@ -1,6 +1,15 @@
 name: WoodCutter
-version: 1.0.0
+version: 1.0.1
 main: dev.mimi.woodcutter.paper.WoodCutterPaperPlugin
 api-version: '1.21'
 authors: [CevAPI]
 description: Adds expanded stonecutter recipes for logs, deepslate, and stone.
+commands:
+  stonecutterdamage:
+    description: Configure damage dealt when entities step on stonecutters.
+    usage: /stonecutterdamage <status|on|off|set <hearts>>
+    permission: woodcutter.command.stonecutterdamage
+permissions:
+  woodcutter.command.stonecutterdamage:
+    description: Allows changing stonecutter damage settings.
+    default: op
