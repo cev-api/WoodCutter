@@ -1,0 +1,3 @@
+stonecutter-damage:
+  enabled: true
+  hearts: 1.0
