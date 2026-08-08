@@ -14,7 +14,7 @@ WoodCutter adds balanced stonecutter recipes for wood (As well as stone, and dee
 
 ## Compatibility
 
-- Paper: `1.21.x`
+- Paper: `1.21.x & 26.2` 
 - Fabric (server): `1.21.11+` (official Mojang mappings / mojmap)
 
 ## Build
