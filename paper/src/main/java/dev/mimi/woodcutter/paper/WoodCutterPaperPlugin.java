@@ -1,6 +1,7 @@
 package dev.mimi.woodcutter.paper;
 
 import io.papermc.paper.event.entity.EntityMoveEvent;
+import io.papermc.paper.event.server.ServerResourcesReloadedEvent;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
@@ -13,6 +14,7 @@ import org.bukkit.command.PluginCommand;
 import org.bukkit.command.TabCompleter;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.inventory.ItemStack;
@@ -47,7 +49,15 @@ public final class WoodCutterPaperPlugin extends JavaPlugin implements Listener,
         loadDamageSettings();
         Bukkit.getPluginManager().registerEvents(this, this);
         registerCommands();
+        registerRecipes();
+    }
 
+    @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
+    public void onResourcesReloaded(ServerResourcesReloadedEvent event) {
+        registerRecipes();
+    }
+
+    private void registerRecipes() {
         List<RecipeDef> defs = loadDefinitions();
         int added = 0;
 
