@@ -31,15 +31,15 @@ On Windows:
 
 Build outputs:
 
-- Paper jar: `paper/build/libs/woodcutter-paper-1.0.1.jar`
-- Fabric jar: `fabric/build/libs/woodcutter-fabric-1.0.1.jar`
+- Paper jar: `paper/build/libs/woodcutter-paper-1.0.2.jar`
+- Fabric jar: `fabric/build/libs/woodcutter-fabric-1.0.2.jar`
 
 ## Install
 
 ### Paper
 
 1. Stop the server.
-2. Put `woodcutter-paper-1.0.1.jar` in `plugins/`.
+2. Put `woodcutter-paper-1.0.2.jar` in `plugins/`.
 3. Start the server.
 
 #### Stonecutter Damage Command (Paper)
@@ -61,7 +61,7 @@ stonecutter-damage:
 ### Fabric (server)
 
 1. Install Fabric Loader for `1.21.11+`.
-2. Put `woodcutter-fabric-1.0.1.jar` in `mods/`.
+2. Put `woodcutter-fabric-1.0.2.jar` in `mods/`.
 3. Start the server.
 
 #### Stonecutter Damage Command (Fabric)
