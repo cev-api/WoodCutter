@@ -14,8 +14,8 @@ WoodCutter adds balanced stonecutter recipes for wood (As well as stone, and dee
 
 ## Compatibility
 
-- Paper: `1.21.x & 26.2` 
-- Fabric (server): `1.21.11+` (official Mojang mappings / mojmap)
+- Paper: `26.2`
+- Fabric (server): `26.2` (Mojang-named, unobfuscated game classes)
 
 ## Build
 
@@ -31,15 +31,15 @@ On Windows:
 
 Build outputs:
 
-- Paper jar: `paper/build/libs/woodcutter-paper-1.0.1.jar`
-- Fabric jar: `fabric/build/libs/woodcutter-fabric-1.0.1.jar`
+- Paper jar: `paper/build/libs/woodcutter-paper-1.0.2.jar`
+- Fabric jar: `fabric/build/libs/woodcutter-fabric-1.0.2.jar`
 
 ## Install
 
 ### Paper
 
 1. Stop the server.
-2. Put `woodcutter-paper-1.0.1.jar` in `plugins/`.
+2. Put `woodcutter-paper-1.0.2.jar` in `plugins/`.
 3. Start the server.
 
 #### Stonecutter Damage Command (Paper)
@@ -60,8 +60,8 @@ stonecutter-damage:
 
 ### Fabric (server)
 
-1. Install Fabric Loader for `1.21.11+`.
-2. Put `woodcutter-fabric-1.0.1.jar` in `mods/`.
+1. Install Fabric Loader `0.19.3+` for Minecraft `26.2`.
+2. Put `woodcutter-fabric-1.0.2.jar` in `mods/`.
 3. Start the server.
 
 #### Stonecutter Damage Command (Fabric)
